@@ -1,0 +1,66 @@
+/**
+ *Webpage about myself
+ */
+html{
+	background-color:#102372
+}
+
+head {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+  }
+
+h1 {
+	font-family: Verdana;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	color: #acd1b2;
+}
+h2 {
+	font-family: Verdana;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	color: #acd1b2;
+}
+body {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+  }
+
+  p {
+    font-size: (31);
+    color:aliceblue
+   }
+
+
+#name {
+	position: relative;
+	top: -10px;
+	font-color:
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+div{
+	border-radius:5px;
+}
+
+#footer{
+	position:relative;
+	height: 50px;
+	float:right;
+	background-color:#668284
+	clear:both;
+	font-family: Verdana, sans-serif;
+	font-size:14px;
+	text-align:center;
+	color:#ffffff
+}
+#footer p{
+	position:relative;
+	padding-top:15px;
+}
