@@ -32,3 +32,17 @@ p {
 #myname {
     color:aqua
 }
+.imgtest{
+    width: 350px;
+    float: right;
+    padding: 15px;
+    margin: 50px;
+    background: gray;
+    border: 2px;
+    font: purple;
+}
+
+.htest{
+    font: orange;
+    
+}
