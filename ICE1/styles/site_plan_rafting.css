@@ -1,0 +1,52 @@
+body {
+    background-color: purple;
+}
+
+h1 {
+    color: white;
+    font-size: 1.5em;
+    background-color: rgb(83, 187, 83);
+    padding: 25px;
+    border: 3px solid #990000;
+    margin: 12px 100px 10px 300px;
+    
+}
+
+h2 {
+    color:blue;
+    background-color: brown;
+}
+
+p {
+    width: 500px;
+    margin: 15px auto;
+}
+
+.wider {
+    width: 700px;
+    columns: beige;
+    line-height: 1.5em;
+    font-family: 'Water Brush', cursive;
+}
+
+#myname {
+    color:aqua
+}
+.imgtest {
+    width: 350px;
+    float: right;
+    padding: 15px;
+    margin: 50px;
+    background: gray;
+    border: 2px;
+    font: purple;
+}
+
+.htest {
+    font: orange;
+    
+}
+
+.weee {
+    border: black;
+}

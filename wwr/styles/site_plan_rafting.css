@@ -32,7 +32,7 @@ p {
 #myname {
     color:aqua
 }
-.imgtest{
+.imgtest {
     width: 350px;
     float: right;
     padding: 15px;
@@ -42,7 +42,11 @@ p {
     font: purple;
 }
 
-.htest{
+.htest {
     font: orange;
     
+}
+
+.weee {
+    border: black;
 }
