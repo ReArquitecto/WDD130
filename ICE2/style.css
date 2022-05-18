@@ -10,13 +10,13 @@
 
 .cirimg {
     border-radius: 50%;
-    border: 10px solid rgb(36, 35, 35);
+    border: 10px solid rgb(58, 55, 55);
     width: 200px;
   }
 
 .row {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: rgba(81, 66, 66, 0.789);
 
 }
