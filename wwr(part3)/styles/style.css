@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Roboto+Flex:opsz@8..144&family=Roboto+Slab&display=swap');
+
+:root {
+  --primary-color: #264653   ;
+  --secondary-color: #e9c46a ;
+  --accent1-color: #2a9d8f;
+  --accent2-color: white;
+
+  --hero-font: "Grape Nuts", "Brush Script MT", sans-serif;
+  --heading-font: "Roboto Slab", Arial, sans-serif;
+  --paragraph-font: "Roboto Flex", Helvetica, sans-serif;
+
+  --headline-color-on-white: #264653;  /* headlines on a white background */ 
+  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #264653; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #264653  ;
+  --nav-link-color: #264653;
+  --nav-background-color: #2a9d8f;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #264653;
+}
+#content {
+    text-align: center;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav a {
+    text-align: center;
+    background-color: black;
+    color: #d9c2a3;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 35px;
+}
+
+.logo {
+    width: 80px;
+}
+
+#logo_link {
+    padding-top: 5px;
+}   
+
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+.hero {
+    width: 100%;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+#hero-msg {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+}
+
+#hero-msg {
+    color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+}
+
+h4{
+    text-align: center;
+    font-family: var(--heading-font);
+}
+
+.button-box{
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+}
+
+body {
+    background-color: var(--accent2-color);
+    font-family: var(--paragraph-font);
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: var(--secondary-color);
+}
+
+nav {
+    background-color: black;
+    color: #d9c2a3;
+    font-family: var(--paragraph-font);
+}
+
+a:hover {
+    background-color: black;
+    color: #d9c2a3;
+}
+.book {
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 50px;
+
+}
+
+.book:hover {
+    text-decoration: underline;
+}
+
+.join {
+    background-color: var(--primary-color);
+    text-decoration: none;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.join:hover {
+    background-color: var(--secondary-color);
+}
+
+#background {
+    background-color: var(--primary-color);
+}
+.msg {
+    background-color: var(--primary-color);
+    font-size: .8em;
+    padding: 35px;
+    color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+    line-height: 1.5em;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+footer .social img {
+    padding-top: 15px;
+}  
+
+
+h3 {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.home-title {
+    color: var(--primary-color);
+    font-family: var(--hero-font);
+    font-size: 3em;
+}
+
+h4 {
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+}
+
+p {
+    color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
