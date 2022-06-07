@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Roboto+Flex:opsz@8..144&family=Roboto+Slab&display=swap');
 
 :root {
-  --primary-color: #264653   ;
+  --primary-color: #ffe8d6   ;
   --secondary-color: #e9c46a ;
-  --accent1-color: #2a9d8f;
-  --accent2-color: white;
+  --accent1-color: #6b705c;
+  --accent2-color: #cb997e;
 
   --hero-font: "Grape Nuts", "Brush Script MT", sans-serif;
   --heading-font: "Roboto Slab", Arial, sans-serif;
