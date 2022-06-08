@@ -4,7 +4,7 @@
   --primary-color: #ffe8d6   ;
   --secondary-color: #a48842 ;
   --accent1-color: #6b705c;
-  --accent2-color: #cb997e;
+  --accent2-color: #ffe8d6;
 
   --hero-font: "Grape Nuts", "Brush Script MT", sans-serif;
   --heading-font: "Roboto Slab", Arial, sans-serif;
@@ -91,9 +91,6 @@ h4{
 main {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-}
-
-main section {
     text-align: center;
 }
 
@@ -127,7 +124,7 @@ nav {
 }
 
 a:hover {
-    background-color: black;
+    background-color: var(--accent2-color);
     color: #d9c2a3;
 }
 .book {
@@ -152,12 +149,12 @@ a:hover {
     text-decoration: underline;
     font-weight: bold;
     font-size: 18px;
-    padding: 30px;
+    padding: 10px;
     margin-top: 50px;
 }
 
 .join:hover {
-    background-color: var(--secondary-color);
+    color: var(--accent1-color);
 }
 
 .msg {
@@ -174,6 +171,8 @@ a:hover {
 
 footer {
     background-color: var(--primary-color);
+    max-width: 1600px;
+    text-align: center;
     color: var(--primary-color);
     text-decoration: none;
     font-family: var(--paragraph-font);
@@ -183,10 +182,10 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
+
 footer .social img {
     padding-top: 15px;
 }  
-
 
 h3 {
     color: var(--secondary-color);
@@ -200,14 +199,14 @@ a {
 }
 
 a:hover {
-    color: var(--secondary-color);
+    color: var(--accent1-color);
     text-decoration: underline;
 }
 
 .home-title {
     color: var(--primary-color);
     font-family: var(--hero-font);
-    font-size: 3em;
+    font-size: 5em;
 }
 
 h4 {
@@ -251,6 +250,8 @@ p {
      
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
         display: block;
         height: auto;
     }
