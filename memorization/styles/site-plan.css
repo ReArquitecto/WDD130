@@ -8,7 +8,7 @@
 
   /*Specific color variables*/
   --logo-color: var(--primary-hover-color);
-  --gradient: linear-gradient(45deg, var(--primary-color), var(--primary-hover-color));
+  --gradient: linear-gradient(45deg, var(--primary-hover-color), var(--accent1-color));
 
   /* change the values below to your chosen font(s) */
   --cool-text: 'Inconsolata', monospace;
@@ -66,16 +66,22 @@ header {
   color: var(--accent1-color);
   background-color: var(--background-color);
 }
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
 h1, h2 {
-  font-family: var(--cool-text);
-  font-size: 4rem;
+  font-family: var(--scripture-text);
   text-transform: uppercase;
-  font-weight: 900;
   background-image: var(--gradient);
   background-size: 400%;
   -webkit-background-clip: text;
   color: transparent;
-  animation: bg-amimation 5s infinite;
+  animation: bg-amimation 10s infinite;
 }
 
 h1:hover, h2:hover {
