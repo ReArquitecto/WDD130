@@ -9,6 +9,7 @@
   /*Specific color variables*/
   --logo-color: var(--primary-hover-color);
   --gradient: linear-gradient(45deg, var(--primary-hover-color), var(--accent1-color));
+  --gradient2: linear-gradient(45deg, var(--background-color), var(--accent1-color));
 
   /* change the values below to your chosen font(s) */
   --cool-text: 'Inconsolata', monospace;
@@ -17,7 +18,7 @@
   --not-sure: 'Roboto', sans-serif;
 }
 
-@keyframes bg-amimation {
+@keyframes bg-animation {
   0% {background-position: left;}
   50% {background-position: right;}
   100% {background-position: left;}
@@ -43,6 +44,7 @@ h3, h4, h5, h6 {
   background-size: 300%;
   background-position: left;
   -webkit-background-clip: text;
+  text-decoration: underline;
   color: transparent;
   transition: background-position 1s;
 }
@@ -81,7 +83,7 @@ h1, h2 {
   background-size: 400%;
   -webkit-background-clip: text;
   color: transparent;
-  animation: bg-amimation 10s infinite;
+  animation: bg-animation 10s infinite;
 }
 
 h1:hover, h2:hover {
@@ -126,11 +128,16 @@ p.colored {
 }
 
 nav {
-  background-color: var(--accent1-color);
+  background-image: var(--gradient2);
+  background-size: 300%;
+  background-position: left;
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
+  animation: bg-animation 20s infinite;
+
 }
+
 nav  {
   list-style-type: none;
   display: flex;
@@ -145,7 +152,7 @@ nav a {
 
 }
 nav a:link, nav a:visited {
-  color: var(--nav-link-color);
+  color: var(--primary-color);
 }
 nav a:hover {
   color: var(--primary-hover-color);
@@ -166,7 +173,7 @@ nav a:hover {
 .sitemap > div {
 
   text-align: center;
-  color: var(--accent1-color);
+  color: white;
 }
 
 .sm {
