@@ -27,7 +27,7 @@ nav a {
 }
 
 .logo {
-    width: 70px;
+    width: 80px;
 }
 
 #logo_link {
@@ -146,15 +146,19 @@ a:hover {
 .join {
     background-color: var(--primary-color);
     text-decoration: none;
-    text-decoration: underline;
     font-weight: bold;
     font-size: 18px;
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 48px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: block;
+    background-color: gray;
+    text-align: center;
 }
 
 .join:hover {
-    color: var(--accent1-color);
+    text-decoration: underline;
 }
 
 .msg {
@@ -167,6 +171,7 @@ a:hover {
     box-shadow: 5px 5px 10px #6f7364;
     grid-column: 6/10;
     grid-row: 6/7;
+    text-align: left;
 }
 
 footer {
@@ -252,12 +257,14 @@ p {
 .card-img {
     width: 100%;
     border: 10px solid #d9c2a3;
-    transition: transform .5s;
+    transition: transform .35s;
+    transition: border .35s;
     box-shadow: 5px 5px 10px #6f7364;
 }
 .card-img:hover {
-    opacity: .6;
-    transform: scale(1.1);
+    border: 10px solid rgb(255, 232, 214);
+    opacity: .9;
+    transform: scale(1.01);
 }
      
 @media screen and (max-width: 900px) {

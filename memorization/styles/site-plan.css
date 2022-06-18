@@ -32,9 +32,16 @@ body {
   font-size: 18px;
   text-align: center;
 }
+
+.logo {
+  width: 500px;
+  height: auto;
+}
+
 img {
   display: block;
-  margin: 0 auto;
+  margin: auto;
+  width: 100%;
 }
 
 h3, h4, h5, h6 {
@@ -69,13 +76,14 @@ header {
   background-color: var(--background-color);
 }
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
 }
+
 h1, h2 {
   font-family: var(--scripture-text);
   text-transform: uppercase;
@@ -94,7 +102,9 @@ p {
   font-family: var(--main-text);
   color: var(--primary-color);
   padding: 1em;
+  font-size: 1.3em;
 }
+
 .colors {
   width: 100%;
   min-width: 350px;
@@ -135,7 +145,6 @@ nav {
   text-align: center;
   font-size: 1.2em;
   animation: bg-animation 20s infinite;
-
 }
 
 nav  {
@@ -216,4 +225,25 @@ nav a:hover {
 
 .dark-text {
   color: #202020;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.wireframe {
+  width: 60%;
+  height: auto;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 50px;
+}
+
+.content-grid > div > p {
+  text-align: left;
 }
