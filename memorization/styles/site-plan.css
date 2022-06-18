@@ -247,3 +247,9 @@ section {
 .content-grid > div > p {
   text-align: left;
 }
+
+img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
