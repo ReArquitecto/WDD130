@@ -8,13 +8,89 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <div class = "flex-container dark-blue">
-        <img class="logo" src="images/verses.png" alt="verses">
-        <li><a class="button" href="default.asp">Home</a></li>
-        <li><a class="button" href="contact.asp">Contact</a></li>
-        <li><a class="button" href="news.asp">News</a></li>
-        <li><a class="button" href="about.asp">About</a></li>
-        
+<header>
+    <div class="content">
+    <div id="navbar" class = "sticky navbar flex-container dark-blue">
+        <a class="logo-buddy" href="index.html"><img class="logo" src="images/logo-graphic.svg" alt="verses"></a>
+        <a class="logo-writing" href="index.html">Verses</a>
+        <a class="button" href="default.asp">Home</a>
+        <a class="button" href="contact.asp">Contact</a>
+        <a class="button little-right-margin" href="news.asp">News</a>
+        <a class="button flex-margin-left-auto get-app-button" href="about.asp">Get App</a>
     </div>
+</header>
+<main>
+
+    <section class="s-card">
+    <div class="card card1 flex-card">
+        <div class="limit-width">
+            <h1>Title here</h1>
+            <p>Lots of cool text here and here's some more and here's some more and here's some more</p>
+            <div class="mini-flex-card1">
+                <div class="button">Button here</div>
+                <div class="button">Other button here</div>
+            </div>
+        </div>
+        <img class = "scaleable" src="images/verses-phone.png" alt="phone">        
+    </div>
+    <img src="images/divider.svg" alt="divider" class="divider">
+    </section>
+
+    <section class="s-card">
+    <div class="imageground card2">
+        <img src="images/city.jpg" alt="city">    </div>
+    </section>
+
+    <section class="s-card">
+        <img src="images/top-divider.svg" alt="top divider" class="divider card-gradient">
+        <div class="card card3 card-gradient">
+        </div>
+        <img src="images/divider.svg" alt="divider" class="divider card-gradient">
+    </section>
+
+    <section class="s-card">
+        <div class="whiteground card2">
+            <img src="images/Ebbinghaus-forgetting-curve-and-review-cycle.png" alt="">
+        </div>
+    </section>
+    
+    <section class="s-card">
+        <img src="images/top-divider.svg" alt="top divider" class="divider">
+        <div class="card card3">
+        </div>
+        <img src="images/divider.svg" alt="divider" class="divider">
+    </section>
+
+</main>
+<footer>
+    <div>
+        <h1>This is some text</h1>This is some text for the footer
+    </div>
+    <div class="whiteground">
+        <h1>This is some text</h1>This is some text for the footer
+    </div>
+    
+</footer>
 </body>
+<script>
+
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+    
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+    
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+    
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    
+</script>
 </html>

@@ -1,69 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+:root {
+  --background-color: #0b66c8ff;
+  --accent1-color: #13e7e7;
+  --accent2-color: #007c7c;
+  --less1: #0872e3;
+  --less2: #137c80;
+  box-sizing: border-box;
+}
+
 * {
-  font-family: sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
 }
 
+html {
+  font-family: 'Nunito Sans', sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+li {
+  list-style: none;
+}
+
 body {
-  font-family: Rubik, sans-serif;
-  background-color: #007bff;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: var(--background-color);
   color: #4f5c65;
   font-size: 16px;
   line-height: 24px;
+  margin: 0px 0px 0px 0px;
+  margin: auto;
 }
 
 body {
   font-size: 14px;
   line-height: 20px;
   color: #333;
-  font-family: Arial,sans-serif;
-}
-
-.dark-blue {
-  background-color: darkblue;
+  font-family: 'Nunito Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 .logo{
-  height: auto;
-  width: 100px;
-  vertical-align: middle;
-}
-.flex-container {
-  position: relative;
-  background: #dddddd;
-  background-color: rgb(221, 221, 221);
-  z-index: 1000;
-  display: flex;
-  padding: 7px 2%;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: transparent;
-  position: relative;
-  width: 100%;
-  max-width: 1272px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 36px;
-  padding-bottom: 0px;
-  padding-left: 36px;
+  height: 100%;
+  width: auto;
+  margin-top: 10px;
 }
 
-.button {
-  font-size: 2em;
+.logo-buddy {
+  width: fit-content;
+  height: 60px;
+}
+
+.logo-writing {
+  font-size: 3em;
   padding: 9px 15px;
-  background-color: #3898EC;
+  color: white;
+  text-decoration: none;
+  margin-top: auto;
+  margin-right: auto;
+  font-weight: 600;
+
+}
+.flex-container {
+  background-color: var(--background-color);
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  padding-right: 36px;
+  padding-bottom: 10px;
+  padding-left: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 5px;
+}
+
+
+.button {
+  font-size: 2.1em;
+  padding: 9px 15px;
+  background-color: #0d66c8;
   color: white;
   border: 0;
   line-height: inherit;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 10px;
-
+  border-radius: 6px;
+  text-align: center;
+  vertical-align: bottom;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  
 }
 
+.button:focus,
 .button:hover {
-  background-color:#0463c9;
+  outline: 4px solid #3d4a58;
 }
+
 header {
   box-sizing: border-box;
   display: flex;
@@ -72,6 +109,146 @@ header {
   position: relative;
   z-index: 1000;
 }
+.card {
+  margin-top: 0px;
+  background-color: var(--background-color);
+  padding-bottom: 0px;
+  position: relative;
+  padding-top: 96px;
+  display: block;
+
+}
+
 .container {
-  
+  padding-top: 0px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: -4vw;
+  width: 100%;
+  max-width: 1272px;
+  margin-right: 36px;
+  padding-bottom: 0px;
+  padding-left: 36px;
+  color: #ffffff;
+  height: 500px;
+}
+
+.divider {
+  position: relative;
+  z-index: 1;
+  width: 100vw;
+  height: 4vw;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  border: 0;
+
+}
+.little-right-margin {
+  margin-right: 1%;
+}
+
+.navbar {
+  overflow: hidden;
+}
+
+.get-app-button {
+  background-image: linear-gradient(to top left, var(--less1), var(--less2));
+  background-size: 700%;
+  background-position: right;
+  transition: background-position 3sec;
+  color: white;
+  outline: 0px solid;
+  transition: outline 1sec;
+}
+
+.get-app-button:focus,
+.get-app-button:hover {
+  outline: 4px solid #3d4a58;
+  background-position: right;
+}
+
+@media (max-width: 823px) {
+  .flex-container {
+    flex-direction: column;
+    width: fit-content;
+    margin-left: 0px;
+  }
+  .logo-writing,
+  .button {
+    margin-right: auto;
+    margin-left: 0;
+    padding-left: 0%;
+  }
+  .logo-writing {
+    margin-top: 40px;
+  }
+  .get-app-button {
+    position: absolute;
+    right: 0;
+    margin-top: 12px;
+    margin-right: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+}
+
+.content {
+  padding-top: 16px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.card {
+  height: fit-content;
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+
+.whiteground {
+  background-color: white;
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+
+.imageground {
+  background-image: url(background.jpg);
+  background-size: 120%;
+}
+
+.card-gradient {
+  background-color: transparent;
+  background-image: linear-gradient(to left, var(--less1), var(--less2));
+}
+
+.mini-flex-card1,
+.flex-card {
+  display: flex;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  gap: 5%;
+}
+
+.scaleable {
+  width: 30%;
+}
+
+.limit-width {
+  max-width: 200px;
 }
