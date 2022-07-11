@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 
 :root {
-  --background-color: #0b66c8ff;
+  --background-color: #0d66c8;
   --accent1-color: #13e7e7;
   --accent2-color: #007c7c;
-  --less1: #0872e3;
-  --less2: #137c80;
+  --light1: #0c417d;
+  --light2: #1d89c8;
+  --dark1: #00234a;
+  --dark2: #001b30;
   box-sizing: border-box;
 }
 
@@ -13,11 +15,32 @@
   font-family: 'Nunito Sans', sans-serif;
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
+  color: white;
 }
 
+.dark {
+  color: #333;
+}
+
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.7em;
+}
+h3 {
+  font-size: 1.1em;
+}
+p {
+  font-size: 1.7em;
+}
 html {
   font-family: 'Nunito Sans', sans-serif;
   -webkit-text-size-adjust: 100%;
+}
+
+main {
+  margin-top: 16px;
 }
 
 li {
@@ -32,9 +55,6 @@ body {
   line-height: 24px;
   margin: 0px 0px 0px 0px;
   margin: auto;
-}
-
-body {
   font-size: 14px;
   line-height: 20px;
   color: #333;
@@ -43,7 +63,7 @@ body {
 }
 
 .logo{
-  height: 100%;
+  height: 90%;
   width: auto;
   margin-top: 10px;
 }
@@ -58,22 +78,20 @@ body {
   padding: 9px 15px;
   color: white;
   text-decoration: none;
-  margin-top: auto;
-  margin-right: auto;
+  margin-top: 19px;
   font-weight: 600;
-
+  margin-right: auto;
 }
+
 .flex-container {
   background-color: var(--background-color);
   display: flex;
   flex-wrap: wrap;
-  max-width: 1600px;
   padding-right: 36px;
   padding-bottom: 10px;
   padding-left: 36px;
-  margin-left: auto;
-  margin-right: auto;
   gap: 5px;
+  justify-content: center;
 }
 
 
@@ -103,19 +121,19 @@ body {
 
 header {
   box-sizing: border-box;
-  display: flex;
   float: none;
   line-height: 24px;
   position: relative;
   z-index: 1000;
 }
 .card {
-  margin-top: 0px;
   background-color: var(--background-color);
   padding-bottom: 0px;
-  position: relative;
   padding-top: 96px;
   display: block;
+  height: fit-content;
+  padding-top: 200px;
+  padding-bottom: 150px;
 
 }
 
@@ -138,6 +156,7 @@ header {
   z-index: 1;
   width: 100vw;
   height: 4vw;
+  /* opacity: 0; */
 }
 
 img {
@@ -151,18 +170,16 @@ img {
   margin-right: 1%;
 }
 
-.navbar {
-  overflow: hidden;
-}
 
 .get-app-button {
-  background-image: linear-gradient(to top left, var(--less1), var(--less2));
+  background-image: linear-gradient(to top left, var(--dark1), var(--dark2));
   background-size: 700%;
   background-position: right;
   transition: background-position 3sec;
   color: white;
   outline: 0px solid;
   transition: outline 1sec;
+  margin-left: 2%;
 }
 
 .get-app-button:focus,
@@ -172,6 +189,9 @@ img {
 }
 
 @media (max-width: 823px) {
+  .sticky {
+    position: unset;
+  }
   .flex-container {
     flex-direction: column;
     width: fit-content;
@@ -194,6 +214,13 @@ img {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .flex-card {
+    display: block;
+  }
+  .card1 {
+    margin-top: 177px;
+  }
+
 }
 
 .sticky {
@@ -203,36 +230,45 @@ img {
   z-index: 100;
 }
 
-.content {
-  padding-top: 16px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .sticky + .content {
   padding-top: 60px;
 }
 
-.card {
+.wept {
+  background-color: red;
   height: fit-content;
-  padding-top: 250px;
-  padding-bottom: 250px;
+  width: 100%;
+
 }
+
 
 .whiteground {
   background-color: white;
-  padding-top: 250px;
-  padding-bottom: 250px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  height: fit-content;
+}
+.whiteground * *,
+.whiteground * {
+  color: #333;
 }
 
-.imageground {
-  background-image: url(background.jpg);
-  background-size: 120%;
+.transparentground {
+  background: transparent;
+  opacity: 0.5;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  height: fit-content;
 }
 
 .card-gradient {
   background-color: transparent;
-  background-image: linear-gradient(to left, var(--less1), var(--less2));
+  background-image: linear-gradient(to left, var(--light1), var(--light2));
+}
+
+.video-card {
+  background-color: transparent;
+
 }
 
 .mini-flex-card1,
@@ -243,6 +279,7 @@ img {
   margin-left: auto;
   align-items: center;
   gap: 5%;
+  justify-content: center;
 }
 
 .scaleable {
@@ -250,5 +287,33 @@ img {
 }
 
 .limit-width {
-  max-width: 200px;
+  max-width: 400px;
+  padding: 1%;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: center;
+  gap: 12%;
+}
+.social_media {
+  display: flex;
+  margin-left: auto;
+  justify-content: center;
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.s-card {
+  background-color: #0d66c8;
 }
