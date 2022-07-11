@@ -9,8 +9,9 @@
 </head>
 <body>
 <header>
+    
     <div class="content">
-    <div id="navbar" class = "sticky navbar flex-container dark-blue">
+    <div id="navbar" class = "navbar flex-container">
         <a class="logo-buddy" href="index.html"><img class="logo" src="images/logo-graphic.svg" alt="verses"></a>
         <a class="logo-writing" href="index.html">Verses</a>
         <a class="button" href="default.asp">Home</a>
@@ -18,10 +19,11 @@
         <a class="button little-right-margin" href="news.asp">News</a>
         <a class="button flex-margin-left-auto get-app-button" href="about.asp">Get App</a>
     </div>
+</div>
 </header>
 <main>
 
-    <section class="s-card">
+    <section class="s-card card1">
     <div class="card card1 flex-card">
         <div class="limit-width">
             <h1>Title here</h1>
@@ -33,20 +35,28 @@
         </div>
         <img class = "scaleable" src="images/verses-phone.png" alt="phone">        
     </div>
-    <img src="images/divider.svg" alt="divider" class="divider">
+    <img src="images/divider/divider-w.svg" alt="white divider" class="divider">
     </section>
 
-    <section class="s-card">
-    <div class="imageground card2">
-        <img src="images/city.jpg" alt="city">    </div>
+    <section class="s-card card2">
+    <div class="">
+        Cool text
+    </div>
     </section>
 
-    <section class="s-card">
-        <img src="images/top-divider.svg" alt="top divider" class="divider card-gradient">
+    <section class="">
+        <img src="images/divider/top-divider-w.svg" alt="top white divider" class="divider video-card">
+        <div class="card card3 video-card">
+        </div> 
+        <img src="images/divider/divider-w.svg" alt="white divider" class="divider card2">
+    </section>
+
+    <!-- <section class="s-card">
+        <img src="images/divider/top-divider-w.svg" alt="top white divider" class="divider card-gradient">
         <div class="card card3 card-gradient">
         </div>
-        <img src="images/divider.svg" alt="divider" class="divider card-gradient">
-    </section>
+        <img src="images/divider/divider-w.svg" alt="white divider" class="divider card-gradient">
+    </section> -->
 
     <section class="s-card">
         <div class="whiteground card2">
@@ -55,21 +65,43 @@
     </section>
     
     <section class="s-card">
-        <img src="images/top-divider.svg" alt="top divider" class="divider">
+        <img src="images/divider/top-divider-w.svg" alt="top white divider" class="divider">
         <div class="card card3">
         </div>
-        <img src="images/divider.svg" alt="divider" class="divider">
+        <img src="images/divider/divider-w.svg" alt="white divider" class="divider">
     </section>
-
+    <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+        <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+        </video>
 </main>
 <footer>
+<div class="whiteground">
+<div class="whiteground footer-columns">
     <div>
-        <h1>This is some text</h1>This is some text for the footer
+        <h1>About Us</h1>
+        <h3>Smaller text</h3>
+        <h3>Smaller text</h3>
+        <h3>Smaller text</h3>
     </div>
-    <div class="whiteground">
-        <h1>This is some text</h1>This is some text for the footer
+    <div >
+        <h1>Contact Us</h1>
+        <h3>Smaller text</h3>
+        <h3>Smaller text</h3>
+        <h3>Smaller text</h3>
     </div>
-    
+    <div>
+        <h1>Social Media</h1>
+        <h3>Smaller text</h3>
+        <h3>Smaller text</h3>
+        <div class="social-media">
+            <a href="https://www.facebook.com/"><img href="facebook.com" src="images/facebook.svg" alt="facebook"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.twitter.com/"><img src="images/twitter.svg" alt="Twitter"></a>
+            <a href="https://youtube.com/"><img src="images/youtube.svg" alt="YouTube"></a>
+        </div>
+    </div>
+</div>
+</div>
 </footer>
 </body>
 <script>
