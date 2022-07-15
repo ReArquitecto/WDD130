@@ -6,8 +6,8 @@
   --accent2-color: #007c7c;
   --light1: #25dbc3;
   --light2: #0d66c8;
-  --dark1: #00234a;
-  --dark2: #001b30;
+  --dark1: #0b1026;
+  --dark2: #131d3b;
   box-sizing: border-box;
 }
 
@@ -355,7 +355,7 @@ img {
 }
 
 .card1 {
-  padding-top: 75px;
+  padding-top: 62px;
 }
 
 .flex-card {
@@ -376,12 +376,13 @@ img {
   padding: 20px 20px 20px 20px;
 }
 .scaleable {
-  width: 16%;
+  width: 22%;
+  margin-left: -5%;
 }
 
 .limit-width {
-  max-width: 490px;
-  padding: 1%;
+  max-width: 32%;
+  padding: 2%;
 }
 
 .footer-columns {
