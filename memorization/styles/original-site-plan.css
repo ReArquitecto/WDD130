@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Nanum+Gothic&family=Noto+Serif&family=Roboto&display=swap');
 :root {
-  --background-color: #0d66c8;
-  --accent1-color: #13e7e7;
-  --accent2-color: #007c7c;
-  --light1: #25dbc3;
-  --light2: #0d66c8;
-  --dark1: #0b1026;
-  --dark2: #131d3b;
+  /* change the values below to your colors from your palette */
+  --background-color: #202020;
+  --primary-color: #998f84;
+  --primary-hover-color: #fae1c3;
+  --accent1-color: #91170d;
+
+  /* new site colors*/
+  --new-background-color: #0d66c8;
+  --new-light1: #25dbc3;
+  --new-light2: #0d66c8;
+  --faded-new-light1: #25dbc378;
+  --faded-new-light2: #0d67c881;
   box-sizing: border-box;
 
   /*Specific color variables*/
@@ -20,11 +24,6 @@
   --main-text: 'Nanum Gothic', sans-serif;
   --scripture-text: 'Noto Serif', serif;
   --not-sure: 'Roboto', sans-serif;
-  
-  /* old site colors*/
-  --old-light1: #91170d;
-  --old-light2: #fae1c3;
-  box-sizing: border-box;
 }
 
 @keyframes bg-animation {
@@ -272,7 +271,6 @@ img {
   gap: 5%;
 }
 
-.original-web-button,
 .web-button {
   font-size: 2.1em;
   padding: 9px 15px;
@@ -296,17 +294,38 @@ img {
 
 .web-button:hover {
   background-color: transparent;
-  background-size: 100%;
-  background-position: bottom;
-  background-image: linear-gradient(var(--light1), var(--light2));
+  -webkit-background-size: 200%;
+  -webkit-background-position: bottom;
+  background-image: linear-gradient(var(--accent1-color), var(--primary-hover-color));
   outline: 4px solid #ffffff;
 }
 
-.original-web-button:hover {
-  background-image: linear-gradient(var(--old-light1), var(--old-light2));
-  -webkit-background-size: 200%;
-  -webkit-background-position: top;
-  outline: 4px solid #ffffff;
+.new-web-button {
+  font-size: 2.1em;
+  padding: 9px 15px;
+  color: white;
+  outline: 2px solid white;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 6px;
+  text-align: center;
+  vertical-align: bottom;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  width: fit-content;
+  transition: outline;
+  transition-duration: 50ms;
 
+  background-color: transparent;
+  background-size: 200%;
+  background-image: linear-gradient(var(--faded-new-light1),var(--faded-new-light2));
+}
+
+.new-web-button:hover {
+  outline: 4px solid #ffffff;
+  background-image: linear-gradient(var(--new-light1), var(--new-light2));
 
 }
