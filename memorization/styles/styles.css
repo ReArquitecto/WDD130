@@ -57,7 +57,7 @@ html {
 }
 
 main {
-  margin-top: 16px;
+  margin-top: 0px;
 }
 
 li {
@@ -174,8 +174,8 @@ body {
   border-radius: 6px;
   text-align: center;
   vertical-align: bottom;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   margin-top: 20px;
   margin-bottom: 5px;
   width: fit-content;
@@ -248,7 +248,7 @@ img {
   color: white;
   outline: 0px solid;
   transition: outline 1sec;
-  margin-left: 2%;
+  margin-left: 1%;
 }
 
 .get-app-button:focus,
@@ -288,7 +288,7 @@ img {
     flex-direction: column;
   }
   .card1 {
-    margin-top: 177px;
+    padding-top: 160px;
     display: block;
   }
 
@@ -354,6 +354,10 @@ img {
   gap: 5%;
 }
 
+.card1 {
+  padding-top: 75px;
+}
+
 .flex-card {
   display: flex;
   flex-direction: row-reverse;
@@ -384,6 +388,10 @@ img {
   display: flex;
   justify-content: center;
   gap: 12%;
+}
+
+.footer-columns * h3:hover {
+  color: var(--background-color);
 }
 
 .features {
@@ -452,4 +460,42 @@ img {
   width: 45%;
   box-shadow: 0px 0px 10px white;
   border-radius: 8px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
