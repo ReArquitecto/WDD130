@@ -37,6 +37,7 @@
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
   color: white;
+  line-height: normal;
 }
 
 
@@ -88,7 +89,7 @@ body {
   color: #4f5c65;
   font-size: 16px;
   line-height: normal;
-  margin: 0px 0px 0px 0px;
+  max-width: 1400px;
   margin: auto;
   font-size: 14px;
   line-height: 20px;
@@ -458,11 +459,10 @@ nav a:hover {
 section {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 1px;
 }
 
 .wireframe {
-  width: 60%;
   height: auto;
 }
 
