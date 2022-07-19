@@ -20,22 +20,24 @@
 
 @keyframes bg-animation {
   0% {
-    background-position: left;
+    background-position: right;
   }
   100% {
-    background-position: right;
+    background-position: left;
   }
 }
 
 .dark {
   color: #333;
 }
+
 .bluewhiteground * *,
 .bluewhiteground *,
 .bluewhiteground {
   color:#0d66c8;
   background-color: white;
 }
+
 h1 {
   font-size: 2.8em;
   line-height: normal;
@@ -44,13 +46,16 @@ h1 {
 h2 {
   font-size: 1.7em;
 }
+
 h3 {
   font-size: 1.1em;
 }
+
 p {
   font-size: 2.1em;
   line-height: 32px;
 }
+
 html {
   font-family: 'Nunito Sans', sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -241,7 +246,8 @@ img {
 
 
 .get-app-button {
-  background-image: linear-gradient(to top left, var(--dark1), var(--dark2));
+  background: #007c7c;
+  background: linear-gradient(-135deg, #30ccb7, #3b98df, #15c4c4, #38c9e6);
   background-size: 700%;
   background-position: right;
   transition: background-position 3sec;
@@ -287,6 +293,7 @@ img {
     display: flex;
     flex-direction: column;
   }
+  
   .card1 {
     padding-top: 160px;
     display: block;
@@ -304,14 +311,6 @@ img {
 .sticky + .content {
   padding-top: 60px;
 }
-
-.wept {
-  background-color: red;
-  height: fit-content;
-  width: 100%;
-
-}
-
 
 .whiteground {
   background-color: white;
@@ -358,6 +357,7 @@ img {
   padding-top: 62px;
 }
 
+.flex-card-switch,
 .flex-card {
   display: flex;
   flex-direction: row-reverse;
@@ -368,13 +368,17 @@ img {
   justify-content: center;
 }
 
-
+.flex-card-switch {
+  display: flex;
+  flex-direction: row;
+}
 
 .cool-blue-border {
   outline: 4px solid #0d66c8;
   border-radius: 12px;
   padding: 20px 20px 20px 20px;
 }
+
 .scaleable {
   width: 22%;
   margin-left: -5%;
